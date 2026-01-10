@@ -22,7 +22,7 @@ nixPkgs = [
     'libpng',
     'libjpeg',
     'freetype',
-    'composer',
+    'phpPackages.composer',
     'nodejs'
 ]
 
