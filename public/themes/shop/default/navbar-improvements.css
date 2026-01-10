@@ -1,0 +1,280 @@
+/* Perfume Palace - Clean Navbar Improvements */
+
+/* Header Background - Modern Light Background */
+.header {
+    background: linear-gradient(180deg, #f9fafb 0%, #ffffff 100%);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo Container Improvements */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: transform 0.3s ease;
+    padding: 8px 0;
+}
+
+.logo-container:hover {
+    transform: scale(1.05);
+}
+
+.logo-container img {
+    max-height: 65px !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain;
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1));
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Navigation Links - Cleaner Look */
+nav a, .nav-link {
+    position: relative;
+    font-weight: 600;
+    font-size: 15px;
+    color: #111827;
+    letter-spacing: 0.01em;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+}
+
+nav a:hover, .nav-link:hover {
+    color: #667eea;
+}
+
+nav a::after, .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after, .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Search Bar - Modern & Clean */
+.header input[type="text"],
+.header input[type="search"] {
+    background: #ffffff !important;
+    border: 2px solid #e5e7eb !important;
+    border-radius: 12px !important;
+    padding: 14px 18px 14px 48px !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    color: #111827 !important;
+    transition: all 0.3s ease !important;
+}
+
+.header input[type="text"]::placeholder,
+.header input[type="search"]::placeholder {
+    color: #6b7280 !important;
+    font-weight: 400 !important;
+}
+
+.header input[type="text"]:hover,
+.header input[type="search"]:hover {
+    border-color: #9ca3af !important;
+    background: #ffffff !important;
+}
+
+.header input[type="text"]:focus,
+.header input[type="search"]:focus {
+    border-color: #667eea !important;
+    background: #ffffff !important;
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.12) !important;
+    outline: none !important;
+}
+
+/* Search Icon */
+.header .icon-search {
+    color: #6b7280 !important;
+    font-size: 20px !important;
+}
+
+/* Icon Improvements - Clean & Consistent */
+.header [class^="icon-"],
+.header [class*=" icon-"] {
+    color: #1f2937;
+    transition: all 0.3s ease;
+    font-size: 26px;
+}
+
+.header [class^="icon-"]:hover,
+.header [class*=" icon-"]:hover {
+    color: #667eea;
+    transform: scale(1.15);
+}
+
+/* Cart & Profile Icons */
+.mini-cart .icon-cart,
+.icon-users,
+.icon-compare {
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* Remove Border Clutter */
+.header .border-b {
+    border-color: #e5e7eb !important;
+}
+
+/* Header Min Height Adjustment for Larger Logo */
+.header > div {
+    min-height: 85px !important;
+}
+
+@media (max-width: 1024px) {
+    .header > div {
+        min-height: 70px !important;
+    }
+}
+
+/* Dropdown Menus - Cleaner */
+.header .dropdown-toggle {
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+}
+
+.header .dropdown-toggle:hover {
+    background: #f9fafb;
+}
+
+/* Category Menu - Modern Look */
+.category-menu {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    padding: 8px 0;
+}
+
+.category-menu a {
+    padding: 10px 20px;
+    display: block;
+    transition: background 0.2s ease;
+}
+
+.category-menu a:hover {
+    background: #f9fafb;
+    color: #667eea;
+}
+
+/* Top Header (if exists) - Minimal */
+.header-top {
+    background: #f9fafb;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 8px 0;
+    font-size: 13px;
+}
+
+/* Mobile Menu Improvements */
+@media (max-width: 1024px) {
+    .logo-container img {
+        max-height: 50px !important;
+    }
+    
+    .logo-text {
+        font-size: 20px;
+    }
+    
+    .header [class^="icon-"],
+    .header [class*=" icon-"] {
+        font-size: 24px;
+    }
+}
+
+/* Badge for Cart Count - Modern */
+.cart-badge {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    position: absolute;
+    top: -6px;
+    right: -6px;
+}
+
+/* Remove Unnecessary Borders */
+.header .border-l-0,
+.header .border-r-0 {
+    border-left: none !important;
+    border-right: none !important;
+}
+
+/* Smooth Transitions for Everything */
+.header * {
+    transition: all 0.3s ease;
+}
+
+/* Clean Spacing */
+.header {
+    padding: 0 !important;
+}
+
+.header > div {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+@media (max-width: 1180px) {
+    .header > div {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+/* Remove Emoji from Logo Text (if logo loads) */
+.logo-container:has(img:not([style*="display:none"])) .logo-text {
+    display: none !important;
+}
+
+/* Category Circle Images - Fix Fitting */
+.scrollbar-hide .rounded-full img,
+.grid .rounded-full img,
+a.rounded-full img {
+    object-fit: cover !important;
+    object-position: center !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Ensure parent circle container maintains aspect ratio */
+a.rounded-full {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+}
+
+/* Improve category circle hover effect */
+a.rounded-full:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Category name styling */
+.grid .text-center {
+    line-height: 1.3 !important;
+    word-break: break-word !important;
+}

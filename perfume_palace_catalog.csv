@@ -1,0 +1,51 @@
+brand,name,gender,family,price,description,sku,stock,status,weight,image_name
+Dior,Sauvage Eau de Parfum,Men,Aromatic Fougere,89.99,"A radically fresh composition, Sauvage is both powerful and noble. Calabrian bergamot adds a juicy freshness to the composition.",PERF-0001,50,active,0.3,perfume_1.jpg
+Chanel,Bleu de Chanel Eau de Toilette,Men,Woody Aromatic,95.0,An ode to masculine freedom expressed in an aromatic-woody fragrance with a captivating trail.,PERF-0002,50,active,0.3,perfume_2.jpg
+Giorgio Armani,Acqua di Gio Profumo,Men,Aquatic Aromatic,92.0,"A sophisticated aquatic fragrance inspired by the sea, combining aromatic and mineral notes.",PERF-0003,50,active,0.3,perfume_3.jpg
+Creed,Aventus,Men,Fruity Chypre,445.0,"A sophisticated blend of pineapple, birch, and musk. One of the most iconic men's fragrances.",PERF-0004,50,active,0.3,perfume_4.jpg
+Tom Ford,Oud Wood,Unisex,Woody Spicy,250.0,Rare oud wood with exotic spices and sensual amber. A luxurious oriental fragrance.,PERF-0005,50,active,0.3,perfume_5.jpg
+Yves Saint Laurent,La Nuit de L'Homme,Men,Woody Spicy,78.0,"Seductive and mysterious with cardamom, cedar, and coumarin notes.",PERF-0006,50,active,0.3,perfume_6.jpg
+Versace,Eros,Men,Fresh Oriental,68.0,"Fresh, woody, and slightly oriental. Mint, green apple, and tonka bean create an unforgettable trail.",PERF-0007,50,active,0.3,perfume_7.jpg
+Paco Rabanne,1 Million,Men,Woody Spicy,72.0,"Bold and powerful with cinnamon, leather, and amber. A statement of luxury.",PERF-0008,50,active,0.3,perfume_8.jpg
+Jean Paul Gaultier,Le Male,Men,Oriental Fougere,65.0,"Iconic masculine fragrance with lavender, mint, vanilla, and cinnamon.",PERF-0009,50,active,0.3,perfume_9.jpg
+Dolce & Gabbana,The One for Men,Men,Oriental Spicy,70.0,"Warm and spicy with tobacco, ginger, and amber notes.",PERF-0010,50,active,0.3,perfume_10.jpg
+Chanel,Coco Mademoiselle,Women,Oriental Floral,105.0,"Fresh and voluptuous ambery fragrance with orange, jasmine, and patchouli.",PERF-0011,50,active,0.3,perfume_11.jpg
+Dior,J'adore Eau de Parfum,Women,Floral Fruity,98.0,"Luminous and sensual, J'adore is a modern, glamorous fragrance with ylang-ylang and Damascus rose.",PERF-0012,50,active,0.3,perfume_12.jpg
+Lancome,La Vie Est Belle,Women,Floral Fruity Gourmand,88.0,"Happiness in a bottle - iris, patchouli, and sweet gourmand notes.",PERF-0013,50,active,0.3,perfume_13.jpg
+Viktor & Rolf,Flowerbomb,Women,Floral,95.0,"An explosion of flowers - jasmine, rose, orchid, and freesia in perfect harmony.",PERF-0014,50,active,0.3,perfume_14.jpg
+Yves Saint Laurent,Black Opium,Women,Oriental Vanilla,89.0,"Addictive and daring with coffee, vanilla, and white flowers.",PERF-0015,50,active,0.3,perfume_15.jpg
+Marc Jacobs,Daisy Eau de Toilette,Women,Floral Fruity,72.0,"Fresh and playful with wild berries, violet, and jasmine.",PERF-0016,50,active,0.3,perfume_16.jpg
+Gucci,Bloom Eau de Parfum,Women,Floral,86.0,"Natural tuberose and jasmine create an authentic, rich floral scent.",PERF-0017,50,active,0.3,perfume_17.jpg
+Carolina Herrera,Good Girl,Women,Oriental Floral,85.0,"Duality of light and dark with almond, coffee, tuberose, and tonka bean.",PERF-0018,50,active,0.3,perfume_18.jpg
+Prada,Candy,Women,Oriental Gourmand,79.0,"Sweet and addictive with caramel, musk, and benzoin.",PERF-0019,50,active,0.3,perfume_19.jpg
+Thierry Mugler,Alien,Women,Woody Floral,82.0,"Mysterious and sensual with jasmine, cashmeran wood, and amber.",PERF-0020,50,active,0.3,perfume_20.jpg
+Byredo,Gypsy Water,Unisex,Woody Aromatic,180.0,Fresh pine and sandalwood evoke the Romani lifestyle with a nomadic spirit.,PERF-0021,50,active,0.3,perfume_1.jpg
+Le Labo,Santal 33,Unisex,Woody Aromatic,220.0,"Cult favorite - smoky sandalwood, cardamom, iris, and violet.",PERF-0022,50,active,0.3,perfume_2.jpg
+Maison Margiela,Replica By the Fireplace,Unisex,Woody Spicy,135.0,"Warm chestnuts, clove, and vanilla evoke a cozy fireside.",PERF-0023,50,active,0.3,perfume_3.jpg
+Jo Malone,Wood Sage & Sea Salt,Unisex,Aromatic Aquatic,142.0,Windswept beaches with mineral sea salt and sage.,PERF-0024,50,active,0.3,perfume_4.jpg
+Diptyque,Tam Dao Eau de Toilette,Unisex,Woody Aromatic,165.0,Creamy sandalwood inspired by the forests of Indochina.,PERF-0025,50,active,0.3,perfume_5.jpg
+Amouage,Interlude Man,Men,Amber Woody,295.0,"Rich and complex with oregano, amber, frankincense, and myrrh.",PERF-0026,50,active,0.3,perfume_6.jpg
+Rasasi,Hawas for Him,Men,Fresh Spicy,45.0,"Crisp apple, cinnamon, and musk with impressive longevity.",PERF-0027,50,active,0.3,perfume_7.jpg
+Lattafa,Fakhar,Men,Woody Spicy,35.0,"Affordable luxury - bergamot, lavender, leather, and amber.",PERF-0028,50,active,0.3,perfume_8.jpg
+Ajmal,Dahn Al Oudh Moattaq,Unisex,Woody Oud,125.0,Pure oud oil aged to perfection with rose and musk.,PERF-0029,50,active,0.3,perfume_9.jpg
+Swiss Arabian,Shaghaf Oud,Unisex,Woody Oud,55.0,"Modern oud with saffron, rose, and praline.",PERF-0030,50,active,0.3,perfume_10.jpg
+Burberry,Brit Rhythm,Men,Woody Spicy,58.0,"Modern and energetic with basil, verbena, and leather.",PERF-0031,50,active,0.3,perfume_11.jpg
+Calvin Klein,Eternity,Men,Aromatic Fougere,52.0,"Timeless classic with lavender, green notes, and sandalwood.",PERF-0032,50,active,0.3,perfume_12.jpg
+Hugo Boss,Bottled Night,Men,Woody Spicy,55.0,"Evening fragrance with birch, cardamom, and musky woods.",PERF-0033,50,active,0.3,perfume_13.jpg
+Lacoste,L.12.12 Blanc,Men,Aromatic,48.0,"Fresh and sporty with rosemary, cardamom, and suede.",PERF-0034,50,active,0.3,perfume_14.jpg
+Ralph Lauren,Polo Blue,Men,Aquatic Aromatic,59.0,"Refreshing aquatic with melon, basil, and suede.",PERF-0035,50,active,0.3,perfume_15.jpg
+Burberry,Her Eau de Parfum,Women,Fruity Gourmand,82.0,"London-inspired with berries, jasmine, and musk.",PERF-0036,50,active,0.3,perfume_16.jpg
+Coach,Floral Eau de Parfum,Women,Floral,68.0,"Modern femininity with rose tea, patchouli, and jasmine.",PERF-0037,50,active,0.3,perfume_17.jpg
+Michael Kors,Wonderlust,Women,Floral Woody,75.0,"Exotic blend of almond milk, heliotrope, and benzoin.",PERF-0038,50,active,0.3,perfume_18.jpg
+Elizabeth Arden,Red Door,Women,Floral Aldehyde,42.0,"Elegant classic with ylang-ylang, rose, and honey.",PERF-0039,50,active,0.3,perfume_19.jpg
+Clinique,Happy,Women,Floral Fruity,45.0,"Cheerful citrus with lily, rose, and orchid.",PERF-0040,50,active,0.3,perfume_20.jpg
+Versace,Dylan Blue,Men,Aromatic Fougere,64.0,"Intense and masculine with bergamot, grapefruit, and incense.",PERF-0041,50,active,0.3,perfume_1.jpg
+Givenchy,Gentleman,Men,Woody Floral,82.0,"Charismatic with pear, lavender, and patchouli.",PERF-0042,50,active,0.3,perfume_2.jpg
+Montblanc,Legend,Men,Aromatic Fougere,58.0,"Confident and timeless with bergamot, lavender, and oak moss.",PERF-0043,50,active,0.3,perfume_3.jpg
+Azzaro,Wanted by Night,Men,Woody Spicy,62.0,"Spicy cinnamon, tobacco, and red cedar for evening wear.",PERF-0044,50,active,0.3,perfume_4.jpg
+Montblanc,Explorer,Men,Woody Aromatic,53.0,"Adventurous with bergamot, vetiver, and patchouli.",PERF-0045,50,active,0.3,perfume_5.jpg
+Gucci,Guilty,Women,Floral Oriental,76.0,"Bold and provocative with mandora, lilac, and amber.",PERF-0046,50,active,0.3,perfume_6.jpg
+Valentino,Donna Born in Roma,Women,Floral Woody,89.0,"Modern elegance with jasmine, bourbon vanilla, and guaiac wood.",PERF-0047,50,active,0.3,perfume_7.jpg
+Jimmy Choo,Eau de Parfum,Women,Fruity Chypre,71.0,"Glamorous with pear, orchid, and patchouli.",PERF-0048,50,active,0.3,perfume_8.jpg
+Dolce & Gabbana,Light Blue,Women,Floral Fruity,69.0,"Mediterranean freshness with apple, jasmine, and cedarwood.",PERF-0049,50,active,0.3,perfume_9.jpg
+Giorgio Armani,Si Passione,Women,Floral Fruity,88.0,"Passionate with pear, rose, and vanilla.",PERF-0050,50,active,0.3,perfume_10.jpg

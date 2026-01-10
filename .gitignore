@@ -1,0 +1,85 @@
+# Environment & Configuration
+.env
+.env.*
+!.env.example
+.env.backup
+.env.production
+.env.local
+
+# IDE & Editor Files
+.idea
+.vscode
+.vagrant
+*.swp
+*.swo
+*~
+
+# PHP & Composer
+.php_cs.cache
+.phpunit.result.cache
+/vendor
+
+# Node & NPM
+/node_modules
+npm-debug.log
+package-lock.json
+yarn.lock
+yarn-error.log
+*.hot
+
+# Build & Compilation
+/public/css
+/public/js
+/public/hot
+/public/build
+/public/mix-manifest.json
+
+# Storage & Uploads
+/public/storage
+/storage/*.key
+/storage/dcc-data/
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/logs/*
+/public/vendor
+/lang/vendor
+
+# Testing
+/test-results
+/playwright-report
+.phpunit.result.cache
+
+# Database & Backups
+*.sql
+*.sql.gz
+*.dump
+*.sqlite
+/database/*.sqlite
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Deployment
+Homestead.json
+Homestead.yaml
+/stubs
+/data
+/docker-compose-collection
+/ignorables/*
+
+# Credentials & Keys
+*_credentials.txt
+*_keys.txt
+*.pem
+*.key
+*.crt
+id_rsa*
+*.p12
+
+# Development Files
+*.log
+*.cache
+*.tmp

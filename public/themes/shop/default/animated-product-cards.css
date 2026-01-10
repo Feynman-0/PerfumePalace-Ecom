@@ -1,0 +1,411 @@
+/* Perfume Palace - Animated CSS Product Cards (No Images) */
+
+/* === ANIMATED PRODUCT CARDS === */
+.product-card {
+    position: relative;
+    border: 2px solid #e5e7eb;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 25px 50px rgba(102, 126, 234, 0.4);
+    border-color: #667eea;
+}
+
+/* Animated Perfume Bottle Container */
+.product-card .product-image-container {
+    position: relative;
+    height: 280px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 40px;
+}
+
+/* CSS Perfume Bottle */
+.product-card .css-perfume-bottle {
+    position: relative;
+    width: 80px;
+    height: 180px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+}
+
+/* Bottle Cap */
+.product-card .bottle-cap {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 25px;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    border-radius: 4px 4px 0 0;
+    z-index: 3;
+}
+
+.product-card .bottle-cap::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 8px;
+    background: #1a252f;
+    border-radius: 2px;
+}
+
+/* Bottle Neck */
+.product-card .bottle-neck {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25px;
+    height: 30px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.6) 100%);
+    border-radius: 2px;
+    z-index: 2;
+}
+
+/* Bottle Body */
+.product-card .bottle-body {
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 125px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.7) 100%);
+    border-radius: 8px;
+    box-shadow: 
+        inset -10px 0 20px rgba(0,0,0,0.1),
+        inset 10px 0 20px rgba(255,255,255,0.5),
+        0 10px 30px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Perfume Liquid */
+.product-card .perfume-liquid {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70%;
+    background: linear-gradient(135deg, var(--perfume-color, #f093fb) 0%, var(--perfume-color-end, #f5576c) 100%);
+    border-radius: 0 0 8px 8px;
+    animation: liquidWave 4s ease-in-out infinite;
+    opacity: 0.8;
+}
+
+@keyframes liquidWave {
+    0%, 100% { height: 70%; }
+    50% { height: 75%; }
+}
+
+/* Shine Effect */
+.product-card .bottle-shine {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    width: 15px;
+    height: 60px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 100%);
+    border-radius: 4px;
+    animation: shine 3s ease-in-out infinite;
+}
+
+@keyframes shine {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 1; }
+}
+
+/* Sparkles around bottle */
+.product-card .sparkle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 50%;
+    animation: sparkle 2s ease-in-out infinite;
+}
+
+.product-card .sparkle:nth-child(1) { top: 20%; left: 15%; animation-delay: 0s; }
+.product-card .sparkle:nth-child(2) { top: 40%; right: 15%; animation-delay: 0.5s; }
+.product-card .sparkle:nth-child(3) { bottom: 30%; left: 20%; animation-delay: 1s; }
+.product-card .sparkle:nth-child(4) { top: 60%; right: 20%; animation-delay: 1.5s; }
+
+@keyframes sparkle {
+    0%, 100% { opacity: 0; transform: scale(0); }
+    50% { opacity: 1; transform: scale(1.5); }
+}
+
+/* Product Card Content */
+.product-card-content {
+    padding: 20px;
+    background: white;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Product Brand Badge */
+.product-brand {
+    display: inline-block;
+    padding: 4px 12px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+    align-self: flex-start;
+}
+
+/* Product Name */
+.product-card .product-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 12px;
+    min-height: 48px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    overflow: hidden;
+    line-height: 1.5;
+}
+
+/* Product Price */
+.product-card .product-price {
+    font-size: 24px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 16px;
+}
+
+/* Product Description */
+.product-card .product-description {
+    font-size: 13px;
+    color: #6b7280;
+    margin-bottom: 16px;
+    flex-grow: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    overflow: hidden;
+}
+
+/* Add to Cart Button */
+.product-card .add-to-cart-btn {
+    width: 100%;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-card .add-to-cart-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.product-card .add-to-cart-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.product-card .add-to-cart-btn:hover::before {
+    left: 100%;
+}
+
+/* === PERFUME COLOR VARIANTS === */
+/* Men's Perfumes - Blue/Purple */
+.product-card.mens-perfume {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.product-card.mens-perfume .perfume-liquid {
+    --perfume-color: #667eea;
+    --perfume-color-end: #764ba2;
+}
+
+/* Women's Perfumes - Pink/Rose */
+.product-card.womens-perfume {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.product-card.womens-perfume .perfume-liquid {
+    --perfume-color: #f093fb;
+    --perfume-color-end: #f5576c;
+}
+
+/* Unisex Perfumes - Green/Teal */
+.product-card.unisex-perfume {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.product-card.unisex-perfume .perfume-liquid {
+    --perfume-color: #4facfe;
+    --perfume-color-end: #00f2fe;
+}
+
+/* Luxury Perfumes - Gold/Orange */
+.product-card.luxury-perfume {
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+.product-card.luxury-perfume .perfume-liquid {
+    --perfume-color: #fa709a;
+    --perfume-color-end: #fee140;
+}
+
+/* Arabic Perfumes - Deep Purple/Brown */
+.product-card.arabic-perfume {
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+}
+
+.product-card.arabic-perfume .perfume-liquid {
+    --perfume-color: #a8edea;
+    --perfume-color-end: #fed6e3;
+}
+
+/* === CATEGORY BADGE === */
+.product-category-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 6px 12px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #667eea;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .product-card .product-image-container {
+        height: 220px;
+        padding: 30px;
+    }
+    
+    .product-card .css-perfume-bottle {
+        width: 60px;
+        height: 140px;
+    }
+    
+    .product-card .bottle-body {
+        width: 60px;
+        height: 100px;
+    }
+    
+    .product-card-content {
+        padding: 16px;
+    }
+    
+    .product-card .product-name {
+        font-size: 14px;
+        min-height: 42px;
+    }
+    
+    .product-card .product-price {
+        font-size: 20px;
+    }
+}
+
+/* === PRODUCT GRID === */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 16px;
+    }
+}
+
+/* === LOADING ANIMATION === */
+.product-card.loading {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+/* === NEW/FEATURED BADGES === */
+.product-card .new-badge,
+.product-card .featured-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    z-index: 10;
+    animation: badgePulse 2s ease-in-out infinite;
+}
+
+.product-card .new-badge {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+}
+
+.product-card .featured-badge {
+    background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+    color: white;
+}
+
+@keyframes badgePulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
