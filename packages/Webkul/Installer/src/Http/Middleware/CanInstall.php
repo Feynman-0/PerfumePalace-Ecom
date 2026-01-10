@@ -43,20 +43,24 @@ class CanInstall
      */
     public function isAlreadyInstalled()
     {
-        // Check environment variable first (for Railway deployment)
+        // Check environment variable first (for Railway/cloud deployment)
         if (env('BAGISTO_INSTALLED', false)) {
             return true;
         }
 
-        if (file_exists(storage_path('installed'))) {
-            return true;
+        // Check database directly (more reliable for cloud deployments)
+        try {
+            if (app(DatabaseManager::class)->isInstalled()) {
+                Event::dispatch('bagisto.installed');
+                return true;
+            }
+        } catch (\Exception $e) {
+            // Database not ready or tables don't exist
+            return false;
         }
 
-        if (app(DatabaseManager::class)->isInstalled()) {
-            touch(storage_path('installed'));
-
-            Event::dispatch('bagisto.installed');
-
+        // Fallback to file check (for local development)
+        if (file_exists(storage_path('installed'))) {
             return true;
         }
 
